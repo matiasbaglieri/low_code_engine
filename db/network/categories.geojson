@@ -1,0 +1,12 @@
+[
+    {
+        "key": "stage",
+        "status": "ACTIVE",
+        "cfg":{"color":"cccccc","lang_avaiable":"es|en","translation":{"en":"HealthCare","es":"Salud"},"type_c":"cccccc","image":"https://everythink.sfo2.digitaloceanspaces.com/img/categories/cat-img-4.jpg","icon":"fa-2x fa fa-heartbeat"}
+    },
+    {
+        "key": "production",
+        "status": "ACTIVE",
+        "cfg":{"color":"3366ff","lang_avaiable":"es|en","translation":{"en":"Real Estate","es":"Bienes raices"},"type_c":"cccccc","image":"https://everythink.sfo2.digitaloceanspaces.com/img/categories/cat-img-5.jpg","icon":"fa-2x fa fa-home"}
+    }
+]

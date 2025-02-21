@@ -1,0 +1,2122 @@
+{
+	"info": {
+		"_postman_id": "df97571a-679e-43d4-ae4e-e78bc0491d2f",
+		"name": "SaaSLowCode",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "business",
+			"item": []
+		},
+		{
+			"name": "professional",
+			"item": []
+		},
+		{
+			"name": "free",
+			"item": [
+				{
+					"name": "public",
+					"item": []
+				},
+				{
+					"name": "business",
+					"item": []
+				},
+				{
+					"name": "professional",
+					"item": []
+				}
+			]
+		},
+		{
+			"name": "developer",
+			"item": [
+				{
+					"name": "oauth2",
+					"item": [
+						{
+							"name": "get_token",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Basic bWF0aWFzMkB0ZWNobm9yaWRlcy5jb206YXNkYXNk"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "code",
+											"value": "cL8FuWdysDtLbgZJ",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "text"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:8000",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/oauth2/token",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"oauth2",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "oauth2_add_client",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Basic bWF0aWFzMkB0ZWNobm9yaWRlcy5jb206YXNkYXNk"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Beer Locker Notifier",
+											"type": "text"
+										},
+										{
+											"key": "id",
+											"value": "this_is_my_id",
+											"type": "text"
+										},
+										{
+											"key": "secret",
+											"value": "this_is_my_secret",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/clients",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"clients"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "swagger",
+					"item": []
+				}
+			]
+		},
+		{
+			"name": "system",
+			"item": [
+				{
+					"name": "public",
+					"item": [
+						{
+							"name": "assets",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/public/assets",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"public",
+										"assets"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "countries",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/public/countries",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"public",
+										"countries"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "network_categories",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/public/network_categories",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"public",
+										"network_categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "network",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/public/networks?key_category=healthcare&latitude=-34.6037&longitude=-58.381",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"public",
+										"networks"
+									],
+									"query": [
+										{
+											"key": "key_category",
+											"value": "healthcare"
+										},
+										{
+											"key": "latitude",
+											"value": "-34.6037"
+										},
+										{
+											"key": "longitude",
+											"value": "-58.381"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "communities",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/public/communities?key_network=n_everythink",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"public",
+										"communities"
+									],
+									"query": [
+										{
+											"key": "key_network",
+											"value": "n_everythink"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "environments",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/public/environments?key_community=somos_pileros_c_partners",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"public",
+										"environments"
+									],
+									"query": [
+										{
+											"key": "key_community",
+											"value": "somos_pileros_c_partners"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "disconnect",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/public/environments?key_community=everythink",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"public",
+										"environments"
+									],
+									"query": [
+										{
+											"key": "key_community",
+											"value": "everythink"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "robot_catalog",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/public/robot_catalog?limit=10&init=0",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"public",
+										"robot_catalog"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "10"
+										},
+										{
+											"key": "init",
+											"value": "0"
+										}
+									]
+								},
+								"description": "Show the answer list"
+							},
+							"response": []
+						},
+						{
+							"name": "skills",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/public/skills?key_id=skills_example",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"public",
+										"skills"
+									],
+									"query": [
+										{
+											"key": "key_id",
+											"value": "skills_example"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "dropdown",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/public/skills?key_id=skills_example",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"public",
+										"skills"
+									],
+									"query": [
+										{
+											"key": "key_id",
+											"value": "skills_example"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "sexual_orientation",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/public/sexual_orientation",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"public",
+										"sexual_orientation"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "recaptcha",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "recaptcha",
+											"value": "ttt",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/recaptcha",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"recaptcha"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "aws",
+					"item": [
+						{
+							"name": "contacts",
+							"item": [
+								{
+									"name": "contact_lists",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{hands_token}}"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/admin/aws/ses/contact_lists?page_size=10&next_token",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"admin",
+												"aws",
+												"ses",
+												"contact_lists"
+											],
+											"query": [
+												{
+													"key": "page_size",
+													"value": "10"
+												},
+												{
+													"key": "next_token",
+													"value": null
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "contact_list",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{hands_token}}"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/admin/aws/ses/contact_list?name=1231df1f112e12312iduser",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"admin",
+												"aws",
+												"ses",
+												"contact_list"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "1231df1f112e12312iduser"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "contact_list",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{hands_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "type_list",
+													"value": "merchant",
+													"type": "text"
+												},
+												{
+													"key": "name",
+													"value": "system_mkt_import_users",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "system import users contact list",
+													"type": "text"
+												},
+												{
+													"key": "tag_key",
+													"value": "mkt_users_imported",
+													"type": "text"
+												},
+												{
+													"key": "tag_val",
+													"value": "marketing users imported",
+													"type": "text"
+												},
+												{
+													"key": "topic_show_name",
+													"value": "topic marketing merchant users",
+													"type": "text"
+												},
+												{
+													"key": "topic_name",
+													"value": "mkt_merchant_users",
+													"type": "text"
+												},
+												{
+													"key": "topic_desc",
+													"value": "merchant users imported in the system",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/admin/aws/ses/contact_list",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"admin",
+												"aws",
+												"ses",
+												"contact_list"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "contact_list",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{hands_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": []
+										},
+										"url": {
+											"raw": "{{host}}/api/admin/aws/ses/contact_list?id=1231df1f112e12312iduser",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"admin",
+												"aws",
+												"ses",
+												"contact_list"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "1231df1f112e12312iduser"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "contacts",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{hands_token}}"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/admin/aws/ses/contacts?page_size=10&next_token&name=1231df1f112e12312iduser",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"admin",
+												"aws",
+												"ses",
+												"contacts"
+											],
+											"query": [
+												{
+													"key": "page_size",
+													"value": "10"
+												},
+												{
+													"key": "next_token",
+													"value": null
+												},
+												{
+													"key": "name",
+													"value": "1231df1f112e12312iduser"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "contact",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{hands_token}}"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/admin/aws/ses/contact?name=1231df1f112e12312iduser&email=matias@hands.ai",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"admin",
+												"aws",
+												"ses",
+												"contact"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "1231df1f112e12312iduser"
+												},
+												{
+													"key": "email",
+													"value": "matias@hands.ai"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "contact",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{hands_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "name",
+													"value": "1231df1f112e12312iduser",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "matias@hands.ai",
+													"type": "text"
+												},
+												{
+													"key": "attrs",
+													"value": "system_mkt_import_users",
+													"type": "text"
+												},
+												{
+													"key": "topic_name",
+													"value": "merchant_leads",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/admin/aws/ses/contact",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"admin",
+												"aws",
+												"ses",
+												"contact"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "contact",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{hands_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": []
+										},
+										"url": {
+											"raw": "{{host}}/api/admin/aws/ses/contact?name=1231df1f112e12312iduser&email=matias@hands.ai",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"admin",
+												"aws",
+												"ses",
+												"contact"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "1231df1f112e12312iduser"
+												},
+												{
+													"key": "email",
+													"value": "matias@hands.ai"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "templates_emails",
+							"item": [
+								{
+									"name": "templates",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{hands_token}}"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/admin/aws/ses/templates?page_size=10&next_token&name=1231df1f112e12312iduser",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"admin",
+												"aws",
+												"ses",
+												"templates"
+											],
+											"query": [
+												{
+													"key": "page_size",
+													"value": "10"
+												},
+												{
+													"key": "next_token",
+													"value": null
+												},
+												{
+													"key": "name",
+													"value": "1231df1f112e12312iduser"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "template",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{hands_token}}"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/admin/aws/ses/template?name=1231df1f112e12312iduser&email=matias@hands.ai",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"admin",
+												"aws",
+												"ses",
+												"template"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "1231df1f112e12312iduser"
+												},
+												{
+													"key": "email",
+													"value": "matias@hands.ai"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "template",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{hands_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "subject",
+													"value": "merchant",
+													"type": "text"
+												},
+												{
+													"key": "txt",
+													"value": "matias@hands.ai",
+													"type": "text"
+												},
+												{
+													"key": "html",
+													"value": "system_mkt_import_users",
+													"type": "text"
+												},
+												{
+													"key": "name",
+													"value": "",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/admin/aws/ses/template",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"admin",
+												"aws",
+												"ses",
+												"template"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "template",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{hands_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": []
+										},
+										"url": {
+											"raw": "{{host}}/api/admin/aws/ses/template?id=1231df1f112e12312iduser",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"admin",
+												"aws",
+												"ses",
+												"template"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "1231df1f112e12312iduser"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "verify_email",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "matias@everythink.ai",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/aws/ses/verify",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"aws",
+										"ses",
+										"verify"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "verify_email_status",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/api/admin/aws/ses/verify?email=matias@everythink.ai",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"aws",
+										"ses",
+										"verify"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "matias@everythink.ai"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "users",
+					"item": [
+						{
+							"name": "login",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/login?username=matias@hands.ai&password=R1c02020",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"login"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "matias@hands.ai"
+										},
+										{
+											"key": "password",
+											"value": "R1c02020"
+										},
+										{
+											"key": "firebase_uid",
+											"value": "not_implemented",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "olivia@everythink.ai",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "asdasd",
+											"type": "text"
+										},
+										{
+											"key": "firebase_uid",
+											"value": "111",
+											"type": "text"
+										},
+										{
+											"key": "network_key",
+											"value": "pdie",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/login",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Recover Account",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/recover?phone=13058030058",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"recover"
+									],
+									"query": [
+										{
+											"key": "phone",
+											"value": "13058030058"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Recover Account Code",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "5f259124623b3b2d61c9fafa",
+											"type": "text"
+										},
+										{
+											"key": "code",
+											"value": "304760",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/recover",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"recover"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Recover Account New Passwd",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"id\":\"5efe900fdb2c345c8357fd9b\", \"new_passwd\":\"asdasd1\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJtYXRpYXNAaGFuZHMuYWkiLCJwYXNzd29yZCI6IiQyYSQxMCRCVmQ3WldNNnlNaFB4dVZxMWhhcFQudS9pQ1ZZa1FhRDcySFB1Sk9USjdPWkZQU3NydGw5TyIsImFjY291bnRfZXhwaXJlZCI6ZmFsc2UsImFjY291bnRfbG9ja2VkIjpmYWxzZSwiZW1haWwiOiJtYXRpYXNAaGFuZHMuYWkiLCJmaXJzdF9uYW1lIjoiTWF0aWFzIiwibGFzdF9uYW1lIjoiQmFnbGllcmkiLCJmaXJlYmFzZV91aWQiOiIxMTEiLCJpc190ZXN0X3VzZXIiOmZhbHNlLCJpc19jb25uZWN0ZWQiOnRydWUsInBhc3N3b3JkX2V4cGlyZWQiOmZhbHNlLCJwaG9uZSI6IjU0OTExNjQ2MTYxMjIiLCJwaG9uZTEiOiIiLCJyZWNvdmVyX2NvZGUiOjAsInJlY292ZXJfY29kZV9yZXRyeSI6MCwiYWdyZWUiOnRydWUsInBvbGl0aWNzIjp0cnVlLCJzdGF0dXMiOiJOT1RfVkFMSURBVEVEIiwiZGVzY3JpcHRpb24iOiIiLCJhdmF0YXIiOiJodHRwczovL2V2ZXJ5dGhpbmsuc2ZvMi5jZG4uZGlnaXRhbG9jZWFuc3BhY2VzLmNvbS9pbWcvYXZhdGFyLnBuZyIsImpvYiI6IiIsImVkdWNhdGlvbiI6IiIsInJlbGF0aW9uc2hpcCI6IiIsImlwIjoiIiwidmFsaWRhdGVkIjoiIiwibGF0aXR1ZGUiOi0zNC42MTMyLCJsb25naXR1ZGUiOi01OC4zNzcyLCJyYWRpdXMiOm51bGwsImN1cnJlbnRMb2NhdGlvbiI6IiIsInZpc2libGUiOnRydWUsImFkbWluIjpmYWxzZSwic3RhdHVzX3BsYW4iOiJOT19QTEFCIiwibGFuZyI6ImVuIiwiaXNfcHJvZmlsZV9lZGl0YWJsZSI6dHJ1ZSwiYmlydGhkYXkiOm51bGwsInJlc3Bhd25faGFpIjoiMjAyMC0wNy0wM1QxODozOTo0MC4wMDBaIiwiaWRfZmFjZWJvb2siOm51bGwsImZiX2FjY2Vzc190b2tlbiI6bnVsbCwiZmJfcmVmcmVzaF90b2tlbiI6bnVsbCwiZmFjZWJvb2siOm51bGwsImluc3RhZ3JhbSI6bnVsbCwidHdpdHRlciI6bnVsbCwibGlua2VkaW4iOm51bGwsImNyZWF0ZWRBdCI6IjIwMjAtMDctMDNUMDI6MTI6NTIuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjAtMDctMDNUMTg6Mzk6NDAuMDAwWiIsImlhdCI6MTU5NDA3OTM3NH0.PyupgwRA7-jmVmkPtVWbw8WXy6lGiD6T3whhoxpfHnA\"}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/me",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"me"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create_user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "first_name",
+											"value": "Carolina",
+											"type": "text"
+										},
+										{
+											"key": "photo",
+											"value": "https://everythink.sfo2.cdn.digitaloceanspaces.com/img/matias-b.png",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "13058030059",
+											"type": "text"
+										},
+										{
+											"key": "latitude",
+											"value": "+44.1111",
+											"type": "text"
+										},
+										{
+											"key": "longitude",
+											"value": "+44.1111",
+											"type": "text"
+										},
+										{
+											"key": "avatar",
+											"value": "https://everythink.sfo2.cdn.digitaloceanspaces.com/img/avatar.png",
+											"type": "text"
+										},
+										{
+											"key": "device_key",
+											"value": "ANDROID|IOS|WEB",
+											"type": "text"
+										},
+										{
+											"key": "device_token",
+											"value": "dasdqpoj13o4i1",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "caro@lee.ai",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "draper2021",
+											"type": "text"
+										},
+										{
+											"key": "firebase_uid",
+											"value": "11",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "Fogliato",
+											"type": "text"
+										},
+										{
+											"key": "network_key",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/users",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create_user_valid_phone",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "6151f463b52362989c62133f",
+											"type": "text"
+										},
+										{
+											"key": "code",
+											"value": "544225",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/users",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create_user_valid_phone_edit_phone",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "5ef547195d8713a4311628da",
+											"type": "text"
+										},
+										{
+											"key": "new_phone",
+											"value": "5491164616122",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/users",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "@me",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/api/me",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"me"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "@devices_connected",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/api/me/devices",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"me",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "@devices_connected",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/api/me/devices",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"me",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "@logout",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "firebase_token",
+											"value": "d5_v0B9YF2A:APA91bEszry8XMLS7u7DaG-9c_oikqr_Wu8mfgh5BIyfXRRO9cbKujJwjhaqaMfOh9qoW9Zj4ORL4u-Hv4GwRaOG22Zy8mGRLl4K3yj1eE2Jc-YdUR2vLpmCQFwyocZLZJuPx-A9Gx2c",
+											"type": "text"
+										},
+										{
+											"key": "device_key",
+											"value": "ANDROID",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/logout",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "upload",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/Users/rebelius/Desktop/Screen Shot 2020-05-25 at 13.18.36.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/me/upload?access_token={{hands_token}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"me",
+										"upload"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{hands_token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "@change_password",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"password\":\"R1c02020\"}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/me/change_password",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"me",
+										"change_password"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "@EditUser",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"relationship\": \"single\"\n}"
+								},
+								"url": {
+									"raw": "{{host}}/api/me",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"me"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "upload_q_c",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/Users/rebelius/Desktop/Screen Shot 2020-03-24 at 06.16.41.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/admin_upload_c?access_token={{hands_token}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin_upload_c"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{hands_token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "upload",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"id\":6}"
+								},
+								"url": {
+									"raw": "{{host}}/api/me/upload",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"me",
+										"upload"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "phone",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "matias@hands.ai",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/phone",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"phone"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "@connect",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "first_name",
+											"value": "pedro",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "lopez",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "1483726385",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "a11@a.com",
+											"type": "text"
+										},
+										{
+											"key": "type_connection",
+											"value": "0",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/connect",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"connect"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "@test_push",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"message_title\": \"EveryThink\",\n\t\"message\": \"Firebase Cloud Message\"\n}"
+								},
+								"url": {
+									"raw": "{{host}}/api/me/push_test",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"me",
+										"push_test"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "fcm",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "AAAANyER4vM:APA91bGW1_wYFfTJ1HAkeq3TwtwPx10yVHeGsJfP9m9cADwRqQxRo2kule9X6TWTVrqJbhroepUAZdjehgeaBuz8RqtSaf3ZdvDldIcqSkOzxD3-VyNmGmbfD58fuqCBnBTmfrV08z9-Pv-g3bzG5-KqvWLg1kUarg"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"to\" : \"59Fdr2yFmsPFQaLrQWLXycEmT3l2\", \n\t\"notification\": {\n    \t\"body\": \"Firebase Cloud Message\"\n\t}\n}"
+								},
+								"url": {
+									"raw": "https://fcm.googleapis.com/fcm/send",
+									"protocol": "https",
+									"host": [
+										"fcm",
+										"googleapis",
+										"com"
+									],
+									"path": [
+										"fcm",
+										"send"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "@forgot_code",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"username\":\"m@hands.ai\",\"recovery_code\":\"\",\"password\":\"asdasd\"}"
+								},
+								"url": {
+									"raw": "{{host}}/api/forgot_code",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"forgot_code"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "@forgot",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"username\":\"m@hands.ai\"}"
+								},
+								"url": {
+									"raw": "{{host}}/api/forgot",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"forgot"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "refresh_token",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "token",
+											"value": "X9YdpVlI2qJLFiW85ZWdRLSPMMG2GaIpwYARiAbrFXZVRgAHotGCVkZfMOKDRO8mArRpf93EBG1EZ24OrHBsY3CcCN7CqpZanJeHYYvQRXW4tebTmrWThlbqExqlOIAQKcLCRa3VTTm4Q7589MM1XNLSI2532paLmcMd9G5lcdrupCm5Um35TOYGPjyGKOtJhDuYZAGwhYe6CaKVEYsZMZXLTthYf6UDipeCGhrcqAH5CXIsw8mtDC0Mb3PIdo70",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/refresh_token",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"refresh_token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "firebase",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "firebase_token",
+											"value": "X9YdpVlI2qJLFiW85ZWdRLSPMMG2GaIpwYARiAbrFXZVRgAHotGCVkZfMOKDRO8mArRpf93EBG1EZ24OrHBsY3CcCN7CqpZanJeHYYvQRXW4tebTmrWThlbqExqlOIAQKcLCRa3VTTm4Q7589MM1XNLSI2532paLmcMd9G5lcdrupCm5Um35TOYGPjyGKOtJhDuYZAGwhYe6CaKVEYsZMZXLTthYf6UDipeCGhrcqAH5CXIsw8mtDC0Mb3PIdo70",
+											"type": "text"
+										},
+										{
+											"key": "type_push",
+											"value": "iOS",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/me/firebase",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"me",
+										"firebase"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "tasks",
+					"item": []
+				},
+				{
+					"name": "analytics",
+					"item": [
+						{
+							"name": "balancer",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{hands_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/static/msg_balancer",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"static",
+										"msg_balancer"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "firebase",
+					"item": [
+						{
+							"name": "firebase_test",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "type_push",
+											"value": "iOS",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/static/firebase_test",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"static",
+										"firebase_test"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "swagger",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{hands_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api-docs",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api-docs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

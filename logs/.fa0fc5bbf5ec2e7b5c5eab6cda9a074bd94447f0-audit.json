@@ -1,0 +1,135 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 25
+    },
+    "auditLog": "logs/.fa0fc5bbf5ec2e7b5c5eab6cda9a074bd94447f0-audit.json",
+    "files": [
+        {
+            "date": 1652966616755,
+            "name": "logs/all.txt.2022-05-19",
+            "hash": "9a6fe5bf8f31ae3b9ec51a02930a8c4b"
+        },
+        {
+            "date": 1653024117654,
+            "name": "logs/all.txt.2022-05-20",
+            "hash": "e268bb00a9f3b090927ed920c9ba44cb"
+        },
+        {
+            "date": 1653176212237,
+            "name": "logs/all.txt.2022-05-21",
+            "hash": "2855ad9563ac1c2fae1d8194d6ff78b4"
+        },
+        {
+            "date": 1653213314890,
+            "name": "logs/all.txt.2022-05-22",
+            "hash": "3b5eaca8c0b32766fa64b7c125e37cc3"
+        },
+        {
+            "date": 1653608031998,
+            "name": "logs/all.txt.2022-05-26",
+            "hash": "334372c6636d65d5cc7756df0f4c9d47"
+        },
+        {
+            "date": 1653621537441,
+            "name": "logs/all.txt.2022-05-27",
+            "hash": "904f14bb62c31a35ff42cae0b949e671"
+        },
+        {
+            "date": 1653818843344,
+            "name": "logs/all.txt.2022-05-29",
+            "hash": "9b5b57d0f8070458a374e3bb3238ddaf"
+        },
+        {
+            "date": 1653884109876,
+            "name": "logs/all.txt.2022-05-30",
+            "hash": "003c13305fc3def13ab50115fd6e06c6"
+        },
+        {
+            "date": 1654901961300,
+            "name": "logs/all.txt.2022-06-10",
+            "hash": "7d797fb0b613793c0276d785a8515dba"
+        },
+        {
+            "date": 1654919010263,
+            "name": "logs/all.txt.2022-06-11",
+            "hash": "cfb8d47c085e52e8d76278e6425a2e21"
+        },
+        {
+            "date": 1655003098977,
+            "name": "logs/all.txt.2022-06-12",
+            "hash": "49427d5851db1ffa8c80084ac0cb24ca"
+        },
+        {
+            "date": 1655130957722,
+            "name": "logs/all.txt.2022-06-13",
+            "hash": "b34e0216a90ab7837cd4f3dd1d02a110"
+        },
+        {
+            "date": 1655177648604,
+            "name": "logs/all.txt.2022-06-14",
+            "hash": "3f1a4682a7ceb9f523b98bf42be4e532"
+        },
+        {
+            "date": 1655507052860,
+            "name": "logs/all.txt.2022-06-17",
+            "hash": "622a6509499e08de6752216a3f897499"
+        },
+        {
+            "date": 1655572551841,
+            "name": "logs/all.txt.2022-06-18",
+            "hash": "14e93149f708d6a9824554127e8e08aa"
+        },
+        {
+            "date": 1655761116989,
+            "name": "logs/all.txt.2022-06-20",
+            "hash": "58183f0aef0db79c62a5439fc4902968"
+        },
+        {
+            "date": 1656254695810,
+            "name": "logs/all.txt.2022-06-26",
+            "hash": "9afef97e8141d7da73544d11ae06a827"
+        },
+        {
+            "date": 1656455605863,
+            "name": "logs/all.txt.2022-06-28",
+            "hash": "f999ca87c1e2c951865342d1f5fc4e15"
+        },
+        {
+            "date": 1656477308602,
+            "name": "logs/all.txt.2022-06-29",
+            "hash": "5f6e51caa3728a89d8cee4bc97c6f8e2"
+        },
+        {
+            "date": 1656712636278,
+            "name": "logs/all.txt.2022-07-01",
+            "hash": "29d8d9445c6c7c4c77e814da2c5b2b08"
+        },
+        {
+            "date": 1656788323155,
+            "name": "logs/all.txt.2022-07-02",
+            "hash": "948236d46eb0a398145d5466feeaef33"
+        },
+        {
+            "date": 1656826092502,
+            "name": "logs/all.txt.2022-07-03",
+            "hash": "ae0ab8102aa7d147f2945401dc16d6e4"
+        },
+        {
+            "date": 1656912128046,
+            "name": "logs/all.txt.2022-07-04",
+            "hash": "69173eae678632402c0599ca985e1431"
+        },
+        {
+            "date": 1656990967352,
+            "name": "logs/all.txt.2022-07-05",
+            "hash": "b15bfcc2ab5ef0cb98d1f0eb16673e86"
+        },
+        {
+            "date": 1657141946488,
+            "name": "logs/all.txt.2022-07-06",
+            "hash": "b1b98d95d8ce35cc930e2b7e47c5266c"
+        }
+    ],
+    "hashType": "md5"
+}
